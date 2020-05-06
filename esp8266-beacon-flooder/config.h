@@ -1,7 +1,7 @@
 #pragma once
 
 /* CORE */
-#define VERSION 1
+#define VERSION "v1.0.0"
 
 #define USE_SERIAL 1
 #define USE_LED 1
