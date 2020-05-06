@@ -19,21 +19,21 @@ namespace beacon {
 		/* 34 - 35 */ 0x21, 0x00, // Capabilities Information 0x21 = OPEN, 0x31 = ENCRYPTED; // 0x01, 0x04 = ?
 		/* 36 - -- */ 0x00
 		/* -- - 37  , 0x04,             // SSID Length
-					  0x20, 0x20, 0x20, 0x20  // SSID */
+			0x20, 0x20, 0x20, 0x20  // SSID */
 	};
 
 	static uint8_t beacon_tail[] = {
-		/*  0 - 1  */ 0x01, 0x08,	// Tag: Supported Rates, Tag Length: 8
-		/*    2    */ 0x82,			  // 1(B)
-		/*    3    */ 0x84,			  // 2(B)
-		/*    4    */ 0x8b,			  // 5.5(B)
-		/*    5    */ 0x96,			  // 11(B)
-		/*    6    */ 0x24,			  // 18
-		/*    7    */ 0x30,			  // 24
-		/*    8    */ 0x48,			  // 36
-		/*    9    */ 0x6c,			  // 54
+		/*  0 - 1  */ 0x01, 0x08,		// Tag: Supported Rates, Tag Length: 8
+		/*    2    */ 0x82,			// 1(B)
+		/*    3    */ 0x84,			// 2(B)
+		/*    4    */ 0x8b,			// 5.5(B)
+		/*    5    */ 0x96,			// 11(B)
+		/*    6    */ 0x24,			// 18
+		/*    7    */ 0x30,			// 24
+		/*    8    */ 0x48,			// 36
+		/*    9    */ 0x6c,			// 54
 
-		/* 10 - 11 */ 0x03, 0x01	// Channel Set, Length
+		/* 10 - 11 */ 0x03, 0x01		// Channel Set, Length
 		// Channel
 	};
 
