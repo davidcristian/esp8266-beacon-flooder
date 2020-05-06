@@ -49,14 +49,6 @@ namespace controller {
 			packets_per_loop = 0;
 
 			if (HOP_CHANNELS) {
-				/*  			 ,\
-  			  				 \\\,_
-	  	  					  \` ,\
-		  				 __,.-" =__)
-					   ."        )
-					,_/   ,    \/\_
-					\_|    )_-\ \_-`
-					   `-----` `--`        */
 				current_channel = current_channel < MAX_CHANNEL ? current_channel + 1 : MIN_CHANNEL;
 				wifi_set_channel(current_channel);
 			}
