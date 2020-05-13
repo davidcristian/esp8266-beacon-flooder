@@ -9,25 +9,26 @@ A beacon frame flooder that that is making use of the cheap ESP8266 WiFi module.
 
 ### Prerequisites
 
-- The [Arduino IDE](https://www.arduino.cc/en/Main/Software) or any other software that allows you to upload sketches to your development board
+The [Arduino IDE](https://www.arduino.cc/en/Main/Software) is required to upload the sketch to your development board. You may use another software if you know what you are doing.
 
 ### Usage
 
-1. Open the Arduino IDE and navigate to `File > Preferences`, then add `http://arduino.esp8266.com/stable/package_esp8266com_index.json` to the `Additional Boards Manager URLs` section
+1. Open the Arduino IDE and navigate to `File > Preferences`, then add the `http://arduino.esp8266.com/stable/package_esp8266com_index.json` URL to the `Additional Boards Manager URLs` list
 2. Open `Tools > Board: "XYZ" > Boards Manager...` and search for `esp8266`
-3. Install the `esp8266` package from the `ESP8266 Community`. The latest version (v2.7.1 as of writing this) is preferred
-4. Clone the repository
-5. Open the `esp8266-beacon-flooder.ino` file
-6. (Optional) Tweak the settings found in the `config.h` file
-7. Upload the sketch to your board
+3. Install the `esp8266` package from the `ESP8266 Community` publisher. The latest version (v2.7.1 as of writing this) is preferred
+4. Select your board in the `Tools` menu, then tweak the settings to your liking. Go for the highest CPU frequency
+5. Clone the repository
+6. Open the `esp8266-beacon-flooder.ino` file
+7. (Optional) Tweak the settings found in the `config.h` file
+8. Upload the sketch to your board
 
 ### Features
 
 Everything mentioned here can be tweaked in the `config.h` file
 - Change the loop time (the loop time is used to switch channels and output the Packets Per Loop stat in the SERIAL interface)
-- Enable / Disable the LED interface and SERIAL interface
+- Enable / Disable the LED interface and the SERIAL interface
 - Set the starting channel, the minimum channel, the maximum channel, and enable channel hopping
-- Set the SSID length or randomize it within set minimum and maximum values
+- Set the SSID length or randomize it within set minimum and maximum length values
 - Append a character at the start of the SSID (such as ' ' or '!') to flood ascending lists
 - Broadcast secure access points along with extra RSN information
 
