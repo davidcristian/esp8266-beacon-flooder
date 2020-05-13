@@ -9,13 +9,13 @@ A beacon frame flooder that that is making use of the cheap ESP8266 WiFi module.
 
 ### Prerequisites
 
-The [Arduino IDE](https://www.arduino.cc/en/Main/Software) is required to upload the sketch to your development board. You may use another software if you know what you are doing.
+The [Arduino IDE](https://www.arduino.cc/en/Main/Software) is required to upload the sketch to your development board. You may use other software if you know what you are doing.
 
 ### Usage
 
 1. Open the Arduino IDE and navigate to `File > Preferences`, then add the `http://arduino.esp8266.com/stable/package_esp8266com_index.json` URL to the `Additional Boards Manager URLs` list
 2. Open `Tools > Board: "XYZ" > Boards Manager...` and search for `esp8266`
-3. Install the `esp8266` package from the `ESP8266 Community` publisher. The latest version (v2.7.1 as of writing this) is preferred
+3. Install the `esp8266` package published by the `ESP8266 Community`. The latest version (v2.7.1 as of writing this) is preferred
 4. Select your board in the `Tools` menu, then tweak the settings to your liking. Go for the highest CPU frequency
 5. Clone the repository
 6. Open the `esp8266-beacon-flooder.ino` file
