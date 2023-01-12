@@ -13,7 +13,7 @@ The [Arduino IDE](https://www.arduino.cc/en/Main/Software) is required to upload
 
 ### Usage
 
-1. Open the Arduino IDE and navigate to `File > Preferences`, then add the `http://arduino.esp8266.com/stable/package_esp8266com_index.json` URL to the `Additional Boards Manager URLs` list
+1. Open the Arduino IDE and navigate to `File > Preferences`, then add the `https://arduino.esp8266.com/stable/package_esp8266com_index.json` URL to the `Additional Boards Manager URLs` list
 2. Open `Tools > Board: "XYZ" > Boards Manager...` and search for `esp8266`
 3. Install the `esp8266` package published by the `ESP8266 Community`. The latest version (v3.0.2 as of writing this) is preferred
 4. Select your board in the `Tools` menu, then tweak the settings to your liking. Go for the highest CPU frequency
